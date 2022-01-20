@@ -1,3 +1,9 @@
+%define major   81
+
+%define libpackage %mklibname poco %{major}
+%define devpackage %mklibname -d poco
+
+
 Name:           poco
 Version:        1.11.1
 Release:        1
@@ -20,6 +26,24 @@ BuildRequires:  pkgconfig(zlib)
 
 %description
 C++ class libraries and frameworks for building network- and Internet-based applications.
+
+%package -n %{libpackage}
+Summary:	C++ class libraries and frameworks for building network- and Internet-based applications.
+Group:		System/Libraries
+
+%description -n %{libpackage}
+C++ class libraries and frameworks for building network- and Internet-based applications.
+
+%package -n %{devpackage}
+Summary:	Development files for poco
+Group:		System/Libraries
+Requires:	%{libpackage} = %{EVRD}
+
+%description -n %{devpackage}
+Development files for poco.
+
+Development C++ class libraries and frameworks for building network- and Internet-based applications.
+
     
 %prep
 %autosetup -n poco-poco-%{version}-release -p1
@@ -54,3 +78,14 @@ rm -rf %{buildroot}%{_libdir}/cmake/Poco/V*
 %fdupes -s %{buildroot}/%{_libdir}/cmake/Poco
 
 %files
+%{_bindir}/arc
+%{_bindir}/cpspc
+%{_bindir}/f2cpsp
+
+%files -n %{libpackage}
+%{_libdir}/libPoco*.so.%{major}
+
+%files -n %{devpackage}
+%{_libdir}/libPoco*.so
+%{_libdir}/cmake/Poco
+%{_includedir}/Poco
