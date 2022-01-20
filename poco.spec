@@ -53,4 +53,4 @@ C++ class libraries and frameworks for building network- and Internet-based appl
 rm -rf %{buildroot}%{_libdir}/cmake/Poco/V*
 %fdupes -s %{buildroot}/%{_libdir}/cmake/Poco
 
-%files -
+%files
