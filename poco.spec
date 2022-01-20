@@ -5,7 +5,7 @@ Summary:        C++ Framework for Network-based Applications
 License:        BSL-1.0
 Group:          System/Libraries
 URL:            https://pocoproject.org
-Source:         https://github.com/pocoproject/%{name}/archive/%{name}-%{version}-release.tar.gz
+Source:         https://github.com/pocoproject/%{name}/archive/%{name}-%{name}-%{version}-release.tar.gz
 BuildRequires:  cmake 
 BuildRequires:  fdupes
 BuildRequires:  mysql-devel
