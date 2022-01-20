@@ -24,6 +24,8 @@ BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  pkgconfig(zlib)
 
+Requires:	%{libpackage} = %{EVRD}
+
 %description
 C++ class libraries and frameworks for building network- and Internet-based applications.
 
