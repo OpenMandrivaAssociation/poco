@@ -24,6 +24,8 @@ BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  pkgconfig(zlib)
 
+BuildRequires: glibc-static-devel
+
 Requires:	%{libpackage} = %{EVRD}
 
 %description
