@@ -1,4 +1,4 @@
-%define major   81
+%define major   83
 
 %define libpackage %mklibname poco %{major}
 %define devpackage %mklibname -d poco
