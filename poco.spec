@@ -23,7 +23,7 @@ BuildRequires:  pkgconfig(libpcrecpp)
 BuildRequires:  pkgconfig(openssl)
 BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  pkgconfig(zlib)
-BuilRequires:   pkgconfig(libpcre2-posix)
+BuildRequires:   pkgconfig(libpcre2-posix)
 BuildRequires: glibc-static-devel
 
 Requires:	%{libpackage} = %{EVRD}
