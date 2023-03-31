@@ -6,7 +6,7 @@
 
 Name:           poco
 Version:        1.12.4
-Release:        1
+Release:        2
 Summary:        C++ Framework for Network-based Applications
 License:        BSL-1.0
 Group:          System/Libraries
