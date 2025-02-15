@@ -25,7 +25,8 @@ BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  pkgconfig(zlib)
 BuildRequires:  pkgconfig(libpcre2-posix)
 BuildRequires:  pkgconfig(libutf8proc)
-BuildRequires: glibc-static-devel
+BuildRequires:  pkgconfig(libpng)
+BuildRequires:  glibc-static-devel
 
 Requires:	%{libpackage} = %{EVRD}
 
