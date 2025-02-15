@@ -84,7 +84,7 @@ rm -rf %{buildroot}%{_libdir}/cmake/Poco/V*
 %fdupes -s %{buildroot}/%{_libdir}/cmake/Poco
 
 %files
-#{_bindir}/arc
+%{_bindir}/poco-arc
 %{_bindir}/cpspc
 %{_bindir}/f2cpsp
 
